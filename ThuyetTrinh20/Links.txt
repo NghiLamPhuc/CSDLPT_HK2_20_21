@@ -1,3 +1,4 @@
 https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/
 http://fit.mta.edu.vn/files/DanhSach/Chuong4_Daisoquanhe.pdf
 https://www.youtube.com/watch?v=MKVdT3RsJrM&t=609s&ab_channel=Ki%E1%BA%BFnTh%E1%BB%A9cM%C3%A1yT%C3%ADnh
+https://www.codehub.com.vn/Hoc-SQL/FULL-OUTER-JOIN-Trong-SQL
