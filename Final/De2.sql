@@ -12,6 +12,7 @@ USE QuanLyThiTracNghiem
 --INSERT INTO CoSo VALUES ('CS2', N'Cơ sở 2', N'Địa chỉ 2: 22 Nguyễn Đình Chiểu, Vĩnh Phước, Thành phố Nha Trang')
 --select * from CoSo
 
+----Mã khoa: KH:STT(01):4_ký_tự_tên
 --delete Khoa
 --CREATE TABLE Khoa(
 --MAKH nchar(8) primary key, TENKH nvarchar(40) unique,
@@ -102,22 +103,54 @@ USE QuanLyThiTracNghiem
 --INSERT INTO GiaoVien VALUES ('GV040002', N'Trần Đỗ Thùy', N'Linh', N'Thạc sỹ', 'KH04KETO')
 --INSERT INTO GiaoVien VALUES ('GV040003', N'Tăng Trí', N'Hùng', N'Tiến sỹ', 'KH04KETO')
 --INSERT INTO GiaoVien VALUES ('GV040004', N'Trần Thị Kim', N'Phượng', N'Thạc sỹ', 'KH04KETO')
+--delete GiaoVien
 --SELECT * FROM GiaoVien
 
+--drop table GiaoVien_DangKy
 --CREATE TABLE GiaoVien_DangKy(
---MAGV char(8) foreign key references GiaoVien(MAGV),
---MALOP char(8) foreign key references Lop(MALOP),
---MAMH char(5) foreign key references MonHoc(MAMH),
---TRINHDO char(1), NGAYTHI datetime, LAN smallint, SOCAUTHI smallint, THOIGIAN smallint)
+--MAGV char(8) foreign key references GiaoVien(MAGV) NOT NULL,
+--MALOP char(8) foreign key references Lop(MALOP) NOT NULL,
+--MAMH char(5) foreign key references MonHoc(MAMH) NOT NULL,
+--TRINHDO char(1) CHECK (TRINHDO = 'A' OR TRINHDO = 'B' OR TRINHDO = 'C'),
+--NGAYTHI datetime DEFAULT GETDATE(),
+--LAN smallint NOT NULL CHECK (LAN >= 1 AND LAN <= 2), 
+--SOCAUTHI smallint CHECK (SOCAUTHI >= 10 AND SOCAUTHI <= 100),
+--THOIGIAN smallint CHECK (THOIGIAN >= 15 AND THOIGIAN <= 60),
+--PRIMARY KEY (MALOP, MAMH, LAN))
 
+--INSERT INTO GiaoVien_DangKy VALUES ('GV020001', 'CNTT2001', 'CSPT', 'A', '01/01/2021', 1, 10, 15)
+
+--select * from GiaoVien_DangKy
+
+
+--DROP TABLE BoDe
 --CREATE TABLE BoDe(
---MAMH char(5) foreign key references MonHoc(MAMH), CAUHOI int primary key,
---TRINHDO char(1), NOIDUNG text, A varchar(30), B varchar(30),
---C varchar(30), D varchar(30), DAPAN char(1),
+--MAMH char(5) foreign key references MonHoc(MAMH),
+--CAUHOI int primary key,
+--TRINHDO char(1) CHECK (TRINHDO = 'A' OR TRINHDO = 'B' OR TRINHDO = 'C'),
+--NOIDUNG text,
+--A nvarchar(30),
+--B nvarchar(30),
+--C nvarchar(30),
+--D nvarchar(30),
+--DAPAN char(1) CHECK (DAPAN = 'A' OR DAPAN = 'B' OR DAPAN = 'C' OR DAPAN = 'D'),
 --MAGV char(8) foreign key references GiaoVien(MAGV))
 
+--INSERT INTO BoDe VALUES ('CSPT', 10, 'A', 'Noi dung 1', 'Dap an A', 'Dap an B', 'Dap an C', 'Dap an D', 'A', 'GV010001')
+--SELECT * FROM BoDe
+
+
+
+--DROP TABLE BangDiem
 --CREATE TABLE BangDiem(
 --MASV char(8) foreign key references SinhVien(MASV),
 --MAMH char(5) foreign key references MonHoc(MAMH),
---LAN smallint, NGAYTHI datetime, DIEM float, BAITHI text, primary key(MASV, MAMH, LAN))
+--LAN smallint CHECK (LAN >= 1 AND LAN <= 2),
+--NGAYTHI datetime DEFAULT GETDATE(),
+--DIEM float CHECK (DIEM >= 0 AND DIEM <= 10),
+--BAITHI text,
+--PRIMARY KEY (MASV, MAMH, LAN))
+
+--INSERT INTO BangDiem VALUES ('01200001', 'CSPT', 1, '01/01/2021', 10.0, null)
+--SELECT * FROM BangDiem
 

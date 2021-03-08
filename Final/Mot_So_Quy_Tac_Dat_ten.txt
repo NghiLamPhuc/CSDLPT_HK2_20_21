@@ -1,0 +1,6 @@
+Mã cơ sở: CS1
+Mã Khoa: KH01CNTT: KH + số thứ tự: 01 + 4 ký tự tên khoa
+Mã lớp: CNTT2001: 4 ký tự tên khoa + năm tuyển sinh : 20 + Số thứ tự lớp: 01
+Mã môn: Ký tự viết tắt tên môn, thiếu thì thêm khoảng trắng.
+Mã sinh viên: số thứ tự khoa: 01 + năm tuyển sinh: 20 + số thứ tự : 0001
+Mã giáo viên: GV + số thứ tự khoa: 01 + số thứ tự : 0001
