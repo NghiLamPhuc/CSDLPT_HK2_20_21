@@ -1,0 +1,2 @@
+--select * from LINK.QuanLyThiTracNghiem.dbo.GiaoVien
+--select * from QuanLyThiTracNghiem.dbo.GiaoVien

@@ -1,0 +1,6 @@
+CREATE procedure [dbo].[SP_DSBODE]
+  @MAMH nchar(5)
+AS
+BEGIN
+	SELECT * FROM dbo.BODE WHERE MAMH = @MAMH
+END

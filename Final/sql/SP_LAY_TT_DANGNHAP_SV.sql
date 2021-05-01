@@ -1,0 +1,15 @@
+CREATE PROC [dbo].[SP_LAY_TT_DANGNHAP_SV]
+@TENLOGIN NVARCHAR (50),
+@maSV nchar(8)
+AS
+DECLARE @TENUSER NVARCHAR(50)
+SELECT @TENUSER=NAME FROM sys.sysusers WHERE sid = SUSER_SID(@TENLOGIN)
+ 
+ SELECT USERNAME = @TENUSER, 
+  HOTEN = (SELECT HO+ ' '+ TEN FROM dbo.SINHVIEN  WHERE MASV = @maSV ),
+   TENNHOM= NAME
+   FROM sys.sysusers 
+   WHERE UID = (SELECT GROUPUID 
+                 FROM SYS.SYSMEMBERS 
+                   WHERE MEMBERUID= (SELECT UID FROM sys.sysusers 
+                                      WHERE NAME=@TENUSER))
