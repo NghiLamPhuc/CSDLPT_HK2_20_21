@@ -1,0 +1,48 @@
+co so 1:
+GV010001
+123456
+GV010001
+Truong
+
+GV010002
+123456
+GV010002
+Coso
+
+Giangvien
+pass: 123456
+login = ma giang vien
+
+Sinhvien
+pass: 123456
+login = 
+01200001
+       2
+       3
+       4
+02200001
+       2
+       3
+       4
+
+------
+co so 2:
+GV030001
+123456
+GV030001
+Truong
+
+GV030002
+123456
+GV030002
+Coso
+
+Giangvien
+pass: 123456
+login = ma giang vien
+(chừa 2 gv cuối)
+
+Sinhvien
+pass: 123456
+login = ma sinh vien
+

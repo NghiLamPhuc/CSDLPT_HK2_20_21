@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDangKy));
             this.lbLoaiTaiKhoan = new System.Windows.Forms.Label();
             this.lbLoginName = new System.Windows.Forms.Label();
             this.lbUserName = new System.Windows.Forms.Label();
@@ -112,7 +111,7 @@
             this.cbbLoaiTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbLoaiTK.FormattingEnabled = true;
             this.cbbLoaiTK.Location = new System.Drawing.Point(397, 162);
-            this.cbbLoaiTK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbbLoaiTK.Margin = new System.Windows.Forms.Padding(2);
             this.cbbLoaiTK.Name = "cbbLoaiTK";
             this.cbbLoaiTK.Size = new System.Drawing.Size(368, 33);
             this.cbbLoaiTK.TabIndex = 6;
@@ -121,7 +120,7 @@
             // 
             this.edtTenDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edtTenDN.Location = new System.Drawing.Point(397, 240);
-            this.edtTenDN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.edtTenDN.Margin = new System.Windows.Forms.Padding(2);
             this.edtTenDN.Name = "edtTenDN";
             this.edtTenDN.Size = new System.Drawing.Size(368, 32);
             this.edtTenDN.TabIndex = 7;
@@ -133,7 +132,7 @@
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThoat.Location = new System.Drawing.Point(589, 489);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(176, 55);
             this.btnThoat.TabIndex = 21;
@@ -147,7 +146,7 @@
             this.btnDangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangKy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDangKy.Location = new System.Drawing.Point(397, 489);
-            this.btnDangKy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDangKy.Margin = new System.Windows.Forms.Padding(2);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(176, 55);
             this.btnDangKy.TabIndex = 20;
@@ -157,9 +156,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::TRACNGHIEM.Properties.Resources.Coso;
             this.pictureBox1.Location = new System.Drawing.Point(164, 87);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(31, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -172,7 +171,7 @@
             this.cbbCoSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbCoSo.FormattingEnabled = true;
             this.cbbCoSo.Location = new System.Drawing.Point(397, 84);
-            this.cbbCoSo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbbCoSo.Margin = new System.Windows.Forms.Padding(2);
             this.cbbCoSo.Name = "cbbCoSo";
             this.cbbCoSo.Size = new System.Drawing.Size(368, 33);
             this.cbbCoSo.TabIndex = 24;
@@ -197,7 +196,7 @@
             this.cbbMaGV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbMaGV.FormattingEnabled = true;
             this.cbbMaGV.Location = new System.Drawing.Point(397, 317);
-            this.cbbMaGV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbbMaGV.Margin = new System.Windows.Forms.Padding(2);
             this.cbbMaGV.Name = "cbbMaGV";
             this.cbbMaGV.Size = new System.Drawing.Size(368, 33);
             this.cbbMaGV.TabIndex = 26;
@@ -215,9 +214,9 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Image = global::TRACNGHIEM.Properties.Resources.matkhau;
             this.pictureBox3.Location = new System.Drawing.Point(164, 392);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(31, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -226,9 +225,9 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Image = global::TRACNGHIEM.Properties.Resources.tendangnhap;
             this.pictureBox2.Location = new System.Drawing.Point(164, 319);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(31, 28);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -237,9 +236,9 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Image = global::TRACNGHIEM.Properties.Resources.Tendangnhap__2_;
             this.pictureBox4.Location = new System.Drawing.Point(164, 246);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(31, 28);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -248,9 +247,9 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Image = global::TRACNGHIEM.Properties.Resources.Loaitaikhoan;
             this.pictureBox5.Location = new System.Drawing.Point(164, 162);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(33, 39);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -282,7 +281,7 @@
             this.mAGVTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsSP_GVChuaTaoTk, "MAGV", true));
             this.mAGVTextEdit.Enabled = false;
             this.mAGVTextEdit.Location = new System.Drawing.Point(798, 317);
-            this.mAGVTextEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mAGVTextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.mAGVTextEdit.Name = "mAGVTextEdit";
             this.mAGVTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mAGVTextEdit.Properties.Appearance.Options.UseFont = true;
@@ -293,7 +292,7 @@
             // 
             this.edtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edtPass.Location = new System.Drawing.Point(397, 395);
-            this.edtPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.edtPass.Margin = new System.Windows.Forms.Padding(2);
             this.edtPass.Name = "edtPass";
             this.edtPass.PasswordChar = '*';
             this.edtPass.Size = new System.Drawing.Size(368, 32);
@@ -323,7 +322,7 @@
             this.Controls.Add(this.lbUserName);
             this.Controls.Add(this.lbLoginName);
             this.Controls.Add(this.lbLoaiTaiKhoan);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmDangKy";
             this.Text = "Đăng ký tài khoản";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -42,6 +42,7 @@
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.barManager2 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar6 = new DevExpress.XtraBars.Bar();
+            this.btnTaiLaiMH = new DevExpress.XtraBars.BarButtonItem();
             this.btnThemMH = new DevExpress.XtraBars.BarButtonItem();
             this.btnSuaMH = new DevExpress.XtraBars.BarButtonItem();
             this.btnXoaMH = new DevExpress.XtraBars.BarButtonItem();
@@ -49,7 +50,6 @@
             this.btnGhiMH = new DevExpress.XtraBars.BarButtonItem();
             this.btnPhucHoiMH = new DevExpress.XtraBars.BarButtonItem();
             this.btnRedo = new DevExpress.XtraBars.BarButtonItem();
-            this.btnTaiLaiMH = new DevExpress.XtraBars.BarButtonItem();
             this.btnThoatMH = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControl1 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl2 = new DevExpress.XtraBars.BarDockControl();
@@ -221,6 +221,7 @@
             this.bar6.DockRow = 0;
             this.bar6.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar6.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnTaiLaiMH, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnThemMH, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnSuaMH, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnXoaMH, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
@@ -228,11 +229,19 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnGhiMH, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnPhucHoiMH, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnRedo, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnTaiLaiMH, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnThoatMH, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar6.OptionsBar.MultiLine = true;
             this.bar6.OptionsBar.UseWholeRow = true;
             this.bar6.Text = "Main menu";
+            // 
+            // btnTaiLaiMH
+            // 
+            this.btnTaiLaiMH.Caption = "Tải lại";
+            this.btnTaiLaiMH.Id = 5;
+            this.btnTaiLaiMH.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiLaiMH.ImageOptions.Image")));
+            this.btnTaiLaiMH.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTaiLaiMH.ImageOptions.LargeImage")));
+            this.btnTaiLaiMH.Name = "btnTaiLaiMH";
+            this.btnTaiLaiMH.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTaiLaiMH_ItemClick);
             // 
             // btnThemMH
             // 
@@ -294,15 +303,6 @@
             this.btnRedo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRedo.ImageOptions.Image")));
             this.btnRedo.Name = "btnRedo";
             this.btnRedo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRedo_ItemClick);
-            // 
-            // btnTaiLaiMH
-            // 
-            this.btnTaiLaiMH.Caption = "Tải lại";
-            this.btnTaiLaiMH.Id = 5;
-            this.btnTaiLaiMH.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiLaiMH.ImageOptions.Image")));
-            this.btnTaiLaiMH.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTaiLaiMH.ImageOptions.LargeImage")));
-            this.btnTaiLaiMH.Name = "btnTaiLaiMH";
-            this.btnTaiLaiMH.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTaiLaiMH_ItemClick);
             // 
             // btnThoatMH
             // 

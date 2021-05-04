@@ -78,7 +78,6 @@
             this.ctxMenuSV = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnThemSV = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSuaSV = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnChuyenLop = new System.Windows.Forms.ToolStripMenuItem();
             this.btnXoaSV = new System.Windows.Forms.ToolStripMenuItem();
             this.btnGhiSV = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPhucHoiSV = new System.Windows.Forms.ToolStripMenuItem();
@@ -298,12 +297,12 @@
             this.bar.DockRow = 0;
             this.bar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnTaiLai, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnThem, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnSuaL, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnXoa, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnGhi, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnPhucHoi, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnTaiLai, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnThoat, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar.OptionsBar.MultiLine = true;
             this.bar.OptionsBar.UseWholeRow = true;
@@ -645,13 +644,12 @@
             this.ctxMenuSV.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnThemSV,
             this.btnSuaSV,
-            this.btnChuyenLop,
             this.btnXoaSV,
             this.btnGhiSV,
             this.btnPhucHoiSV,
             this.btnTaiLaiSV});
             this.ctxMenuSV.Name = "contextMenuStrip1";
-            this.ctxMenuSV.Size = new System.Drawing.Size(274, 326);
+            this.ctxMenuSV.Size = new System.Drawing.Size(274, 280);
             // 
             // btnThemSV
             // 
@@ -668,14 +666,6 @@
             this.btnSuaSV.Size = new System.Drawing.Size(273, 46);
             this.btnSuaSV.Text = "Sửa sinh viên";
             this.btnSuaSV.Click += new System.EventHandler(this.btnSuaSV_Click);
-            // 
-            // btnChuyenLop
-            // 
-            this.btnChuyenLop.Image = ((System.Drawing.Image)(resources.GetObject("btnChuyenLop.Image")));
-            this.btnChuyenLop.Name = "btnChuyenLop";
-            this.btnChuyenLop.Size = new System.Drawing.Size(273, 46);
-            this.btnChuyenLop.Text = "Chuyển lớp";
-            this.btnChuyenLop.Click += new System.EventHandler(this.btnChuyenLop_Click);
             // 
             // btnXoaSV
             // 
@@ -1113,7 +1103,6 @@
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.TextEdit edtTimSV;
         private System.Windows.Forms.ToolStripMenuItem btnSuaSV;
-        private System.Windows.Forms.ToolStripMenuItem btnChuyenLop;
         private DevExpress.XtraEditors.TextEdit edtMaKH;
         private System.Windows.Forms.ComboBox cbbTenLop;
         private System.Windows.Forms.BindingSource bdsDSLop;

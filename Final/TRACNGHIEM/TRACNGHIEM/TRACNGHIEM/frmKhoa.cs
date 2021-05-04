@@ -61,7 +61,7 @@ namespace TRACNGHIEM
                 txtMaCS.Text = cbbCoSoAdd.SelectedIndex.ToString();
             }
             catch (Exception ex) { }
-
+            
             // TODO: This line of code loads data into the 'TNDataSet.BODE' table. You can move, or remove it, as needed.
             this.tbBoDeADT.Connection.ConnectionString = Program.connstr;
             this.tbBoDeADT.Fill(this.TNDataSet.BODE);
@@ -99,7 +99,8 @@ namespace TRACNGHIEM
                 cbbCoSo.Enabled = true;
                 btnThem.Visibility = btnGhi.Visibility = btnXoa.Visibility = btnSuaK.Visibility
                     = btnPhucHoi.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-                btnThemGV.Visible = btnChuyenKhoaGV.Enabled = btnSuaGV.Enabled = btnGhiGV.Visible = btnXoaGV.Visible = btnPhucHoiGV.Visible = false;
+                //btnThemGV.Visible = btnChuyenKhoaGV.Enabled = btnSuaGV.Enabled = btnGhiGV.Visible = btnXoaGV.Visible = btnPhucHoiGV.Visible = false;
+                btnThemGV.Visible = btnSuaGV.Enabled = btnGhiGV.Visible = btnXoaGV.Visible = btnPhucHoiGV.Visible = false;
             }
             txtMaKH.Enabled = txtTenKH.Enabled = false;
 
@@ -121,7 +122,7 @@ namespace TRACNGHIEM
             cbbHocVi.Items.Add("Tiến sĩ");
             cbbHocVi.Items.Add("Tiến sĩ khoa học");
 
-
+            btnTaiLai.PerformClick();
             dem++;
         }
 
@@ -481,7 +482,28 @@ namespace TRACNGHIEM
             edtTimGV.Text = "";
         }
 
+        private void fill_data_at_form_load()
+        {
+            this.tbBoDeADT.Connection.ConnectionString = Program.connstr1;
+            this.tbBoDeADT.Fill(this.TNDataSet.BODE);
+            // TODO: This line of code loads data into the 'TNDataSet.GIAOVIEN_DANGKY' table. You can move, or remove it, as needed.
 
+            this.tbGiaoVienDKADT.Connection.ConnectionString = Program.connstr1;
+            this.tbGiaoVienDKADT.Fill(this.TNDataSet.GIAOVIEN_DANGKY);
+            // TODO: This line of code loads data into the 'TNDataSet.LOP' table. You can move, or remove it, as needed.
+
+            this.tbLopADT.Connection.ConnectionString = Program.connstr1;
+            this.tbLopADT.Fill(this.TNDataSet.LOP);
+            // TODO: This line of code loads data into the 'tNDataSet.GIAOVIEN' table. You can move, or remove it, as needed.
+
+            this.tbGiaoVienADT.Connection.ConnectionString = Program.connstr1;
+            this.tbGiaoVienADT.Fill(this.TNDataSet.GIAOVIEN);
+            // TODO: This line of code loads data into the 'tNDataSet.KHOA' table. You can move, or remove it, as needed.
+
+            this.tbKhoaADT.Connection.ConnectionString = Program.connstr1;
+            this.tbKhoaADT.Fill(this.TNDataSet.KHOA);
+            edtTimGV.Text = "";
+        }
 
         private void btnThemGV_Click_1(object sender, EventArgs e)
         {
@@ -500,7 +522,8 @@ namespace TRACNGHIEM
                 btnGhi.Enabled = false;
                 btnPhucHoi.Enabled = false;
                 gcKhoa.Enabled = gcGiaoVien.Enabled = false;
-                btnSuaGV.Enabled = btnThemGV.Enabled = btnChuyenKhoaGV.Enabled = btnXoaGV.Enabled = false;
+                btnSuaGV.Enabled = btnThemGV.Enabled = btnXoaGV.Enabled = false;
+                //btnSuaGV.Enabled = btnThemGV.Enabled = btnChuyenKhoaGV.Enabled = btnXoaGV.Enabled = false;
                 txtMaKH.Enabled = txtTenKH.Enabled = false;
 
                 checkThemGV = true;
@@ -596,7 +619,8 @@ namespace TRACNGHIEM
                 btnThem.Enabled = btnXoa.Enabled = btnSuaK.Enabled
                  = btnPhucHoi.Enabled = btnTaiLai.Enabled = btnGhi.Enabled = true;
                 gcGiaoVien.Enabled = true; edtTimGV.Text = "";
-                btnSuaGV.Enabled = btnThemGV.Enabled = btnChuyenKhoaGV.Enabled = btnXoaGV.Enabled = true;
+                btnSuaGV.Enabled = btnThemGV.Enabled = btnXoaGV.Enabled = true;
+                //btnSuaGV.Enabled = btnThemGV.Enabled = btnChuyenKhoaGV.Enabled = btnXoaGV.Enabled = true;
                 checkSave = true;
                 panelTimGV.Enabled = true;
             }
@@ -709,7 +733,8 @@ namespace TRACNGHIEM
                          = btnPhucHoi.Enabled = btnTaiLai.Enabled = btnGhi.Enabled = true;
                         gcGiaoVien.Enabled = true;
                         edtTimGV.Text = "";
-                        btnSuaGV.Enabled = btnThemGV.Enabled = btnChuyenKhoaGV.Enabled = btnXoaGV.Enabled = true;
+                        btnSuaGV.Enabled = btnThemGV.Enabled = btnXoaGV.Enabled = true;
+                        //btnSuaGV.Enabled = btnThemGV.Enabled = btnChuyenKhoaGV.Enabled = btnXoaGV.Enabled = true;
 
                     }
                 }
@@ -741,7 +766,8 @@ namespace TRACNGHIEM
             gcKhoa.Enabled = true;
             gcGiaoVien.Enabled = true;
             panelTimGV.Enabled = true;
-            btnSuaGV.Enabled = btnThemGV.Enabled = btnChuyenKhoaGV.Enabled = btnXoaGV.Enabled = true;
+            btnSuaGV.Enabled = btnThemGV.Enabled = btnXoaGV.Enabled = true;
+            //btnSuaGV.Enabled = btnThemGV.Enabled = btnChuyenKhoaGV.Enabled = btnXoaGV.Enabled = true;
             this.tbDSKHOAADT.Connection.ConnectionString = Program.connstr;
             this.tbDSKHOAADT.Fill(this.TNDataSet.DSKHOA);
         }
@@ -770,7 +796,8 @@ namespace TRACNGHIEM
                 btnThem.Enabled = btnXoa.Enabled = btnSuaK.Enabled
                     = btnPhucHoi.Enabled = btnTaiLai.Enabled = btnGhi.Enabled = false;
                 edtMaKHGV.Enabled = false;
-                btnThemGV.Enabled = btnXoaGV.Enabled = btnSuaGV.Enabled = btnChuyenKhoaGV.Enabled = false;
+                btnThemGV.Enabled = btnXoaGV.Enabled = btnSuaGV.Enabled = false;
+                //btnThemGV.Enabled = btnXoaGV.Enabled = btnSuaGV.Enabled = btnChuyenKhoaGV.Enabled = false;
                 checkSave = false;
             }
         }
@@ -794,7 +821,8 @@ namespace TRACNGHIEM
                     = btnPhucHoi.Enabled = btnGhi.Enabled = false;
                 gcKhoa.Enabled = false;
                 gcGiaoVien.Enabled = false;
-                btnSuaGV.Enabled = btnThemGV.Enabled = btnChuyenKhoaGV.Enabled = btnXoaGV.Enabled = false;
+                btnSuaGV.Enabled = btnThemGV.Enabled = btnXoaGV.Enabled = false;
+                //btnSuaGV.Enabled = btnThemGV.Enabled = btnChuyenKhoaGV.Enabled = btnXoaGV.Enabled = false;
                 txtMaKH.Enabled = txtTenKH.Enabled = false;
                 try
                 {
@@ -892,6 +920,9 @@ namespace TRACNGHIEM
             txtMaCS.Text = cbbCoSoAdd.SelectedValue.ToString();
         }
 
+        private void bdsKhoa_CurrentChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

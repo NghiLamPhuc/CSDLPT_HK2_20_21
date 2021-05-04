@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSinhVienMain));
             this.rbSinhVien = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnThi = new DevExpress.XtraBars.BarButtonItem();
             this.btnXemKQ = new DevExpress.XtraBars.BarButtonItem();
@@ -59,28 +58,23 @@
             this.btnThi,
             this.btnXemKQ,
             this.btnDangXuat,
-            this.btnThoat});
+            this.btnThoat,
+            this.rbSinhVien.SearchEditItem});
             this.rbSinhVien.Location = new System.Drawing.Point(0, 0);
-            this.rbSinhVien.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.rbSinhVien.Margin = new System.Windows.Forms.Padding(1);
             this.rbSinhVien.MaxItemId = 5;
             this.rbSinhVien.Name = "rbSinhVien";
+            this.rbSinhVien.OptionsMenuMinWidth = 385;
             this.rbSinhVien.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            // 
-            // 
-            // 
-            this.rbSinhVien.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
-            this.rbSinhVien.SearchEditItem.EditWidth = 150;
-            this.rbSinhVien.SearchEditItem.Id = -5000;
-            this.rbSinhVien.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
-            this.rbSinhVien.Size = new System.Drawing.Size(618, 143);
+            this.rbSinhVien.Size = new System.Drawing.Size(721, 193);
             // 
             // btnThi
             // 
             this.btnThi.Caption = "Thi";
             this.btnThi.Id = 1;
-            this.btnThi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThi.ImageOptions.Image")));
-            this.btnThi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnThi.ImageOptions.LargeImage")));
+            this.btnThi.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.Dethi;
+            this.btnThi.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.Dethi;
             this.btnThi.Name = "btnThi";
             this.btnThi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThi_ItemClick);
             // 
@@ -88,8 +82,8 @@
             // 
             this.btnXemKQ.Caption = "Xem kết quả";
             this.btnXemKQ.Id = 2;
-            this.btnXemKQ.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXemKQ.ImageOptions.Image")));
-            this.btnXemKQ.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnXemKQ.ImageOptions.LargeImage")));
+            this.btnXemKQ.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.Bangdiem;
+            this.btnXemKQ.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.Bangdiem;
             this.btnXemKQ.Name = "btnXemKQ";
             this.btnXemKQ.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnXemKQ_ItemClick);
             // 
@@ -97,8 +91,8 @@
             // 
             this.btnDangXuat.Caption = "Đăng xuất";
             this.btnDangXuat.Id = 3;
-            this.btnDangXuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.ImageOptions.Image")));
-            this.btnDangXuat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.ImageOptions.LargeImage")));
+            this.btnDangXuat.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.Dangxuat;
+            this.btnDangXuat.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.Dangxuat;
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat_ItemClick);
             // 
@@ -106,8 +100,8 @@
             // 
             this.btnThoat.Caption = "Thoát";
             this.btnThoat.Id = 4;
-            this.btnThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.ImageOptions.Image")));
-            this.btnThoat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnThoat.ImageOptions.LargeImage")));
+            this.btnThoat.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.Thoat;
+            this.btnThoat.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.Thoat;
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThoat_ItemClick);
             // 
@@ -157,29 +151,29 @@
             this.MASO,
             this.HOTEN,
             this.NHOM});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 324);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 400);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 6, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(618, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 7, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(721, 26);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // MASO
             // 
             this.MASO.Name = "MASO";
-            this.MASO.Size = new System.Drawing.Size(41, 17);
+            this.MASO.Size = new System.Drawing.Size(51, 20);
             this.MASO.Text = "MASO";
             // 
             // HOTEN
             // 
             this.HOTEN.Name = "HOTEN";
-            this.HOTEN.Size = new System.Drawing.Size(45, 17);
+            this.HOTEN.Size = new System.Drawing.Size(57, 20);
             this.HOTEN.Text = "HOTEN";
             // 
             // NHOM
             // 
             this.NHOM.Name = "NHOM";
-            this.NHOM.Size = new System.Drawing.Size(45, 17);
+            this.NHOM.Size = new System.Drawing.Size(55, 20);
             this.NHOM.Text = "NHOM";
             // 
             // xtraTabbedMdiManager1
@@ -188,13 +182,13 @@
             // 
             // frmSinhVienMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 346);
+            this.ClientSize = new System.Drawing.Size(721, 426);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.rbSinhVien);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "frmSinhVienMain";
             this.Ribbon = this.rbSinhVien;
             this.Text = "Form sinh viên";

@@ -47,12 +47,12 @@ namespace TRACNGHIEM
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKhoa));
             this.barManager = new DevExpress.XtraBars.BarManager(this.components);
             this.bar6 = new DevExpress.XtraBars.Bar();
+            this.btnTaiLai = new DevExpress.XtraBars.BarButtonItem();
             this.btnThem = new DevExpress.XtraBars.BarButtonItem();
             this.btnSuaK = new DevExpress.XtraBars.BarButtonItem();
             this.btnXoa = new DevExpress.XtraBars.BarButtonItem();
             this.btnGhi = new DevExpress.XtraBars.BarButtonItem();
             this.btnPhucHoi = new DevExpress.XtraBars.BarButtonItem();
-            this.btnTaiLai = new DevExpress.XtraBars.BarButtonItem();
             this.btnThoat = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControl1 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl2 = new DevExpress.XtraBars.BarDockControl();
@@ -78,7 +78,6 @@ namespace TRACNGHIEM
             this.ctxMenuGV = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnThemGV = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSuaGV = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnChuyenKhoaGV = new System.Windows.Forms.ToolStripMenuItem();
             this.btnXoaGV = new System.Windows.Forms.ToolStripMenuItem();
             this.btnGhiGV = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPhucHoiGV = new System.Windows.Forms.ToolStripMenuItem();
@@ -304,16 +303,25 @@ namespace TRACNGHIEM
             this.bar6.DockRow = 0;
             this.bar6.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar6.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnTaiLai, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnThem, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnSuaK, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnXoa, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnGhi, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnPhucHoi, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnTaiLai, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnThoat, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar6.OptionsBar.MultiLine = true;
             this.bar6.OptionsBar.UseWholeRow = true;
             this.bar6.Text = "Main menu";
+            // 
+            // btnTaiLai
+            // 
+            this.btnTaiLai.Caption = "Tải lại";
+            this.btnTaiLai.Id = 5;
+            this.btnTaiLai.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiLai.ImageOptions.Image")));
+            this.btnTaiLai.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTaiLai.ImageOptions.LargeImage")));
+            this.btnTaiLai.Name = "btnTaiLai";
+            this.btnTaiLai.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTaiLai_ItemClick);
             // 
             // btnThem
             // 
@@ -358,15 +366,6 @@ namespace TRACNGHIEM
             this.btnPhucHoi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnPhucHoi.ImageOptions.LargeImage")));
             this.btnPhucHoi.Name = "btnPhucHoi";
             this.btnPhucHoi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhucHoi_ItemClick);
-            // 
-            // btnTaiLai
-            // 
-            this.btnTaiLai.Caption = "Tải lại";
-            this.btnTaiLai.Id = 5;
-            this.btnTaiLai.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiLai.ImageOptions.Image")));
-            this.btnTaiLai.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTaiLai.ImageOptions.LargeImage")));
-            this.btnTaiLai.Name = "btnTaiLai";
-            this.btnTaiLai.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTaiLai_ItemClick);
             // 
             // btnThoat
             // 
@@ -518,6 +517,7 @@ namespace TRACNGHIEM
             // 
             this.bdsKhoa.DataMember = "KHOA";
             this.bdsKhoa.DataSource = this.TNDataSet;
+            this.bdsKhoa.CurrentChanged += new System.EventHandler(this.bdsKhoa_CurrentChanged);
             // 
             // tbKhoaADT
             // 
@@ -599,13 +599,12 @@ namespace TRACNGHIEM
             this.ctxMenuGV.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnThemGV,
             this.btnSuaGV,
-            this.btnChuyenKhoaGV,
             this.btnXoaGV,
             this.btnGhiGV,
             this.btnPhucHoiGV,
             this.btnTaiLaiGV});
             this.ctxMenuGV.Name = "btnThemGV";
-            this.ctxMenuGV.Size = new System.Drawing.Size(236, 326);
+            this.ctxMenuGV.Size = new System.Drawing.Size(236, 280);
             // 
             // btnThemGV
             // 
@@ -622,14 +621,6 @@ namespace TRACNGHIEM
             this.btnSuaGV.Size = new System.Drawing.Size(235, 46);
             this.btnSuaGV.Text = "Sửa giảng viên";
             this.btnSuaGV.Click += new System.EventHandler(this.btnSuaGV_Click);
-            // 
-            // btnChuyenKhoaGV
-            // 
-            this.btnChuyenKhoaGV.Image = ((System.Drawing.Image)(resources.GetObject("btnChuyenKhoaGV.Image")));
-            this.btnChuyenKhoaGV.Name = "btnChuyenKhoaGV";
-            this.btnChuyenKhoaGV.Size = new System.Drawing.Size(235, 46);
-            this.btnChuyenKhoaGV.Text = "Chuyển khoa";
-            this.btnChuyenKhoaGV.Click += new System.EventHandler(this.btnChuyenKhoaGV_Click);
             // 
             // btnXoaGV
             // 
@@ -1122,7 +1113,6 @@ namespace TRACNGHIEM
         private System.Windows.Forms.ToolStripMenuItem btnTaiLaiGV;
         private System.Windows.Forms.ComboBox cbbHocVi;
         private System.Windows.Forms.ToolStripMenuItem btnSuaGV;
-        private System.Windows.Forms.ToolStripMenuItem btnChuyenKhoaGV;
         private DevExpress.XtraEditors.PanelControl panelTimGV;
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.Label label2;

@@ -45,12 +45,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBoDe));
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
+            this.btnTaiLaiBD = new DevExpress.XtraBars.BarButtonItem();
             this.btnThemBD = new DevExpress.XtraBars.BarButtonItem();
             this.btnSuaBD = new DevExpress.XtraBars.BarButtonItem();
             this.btnXoaBD = new DevExpress.XtraBars.BarButtonItem();
             this.btnGhiBD = new DevExpress.XtraBars.BarButtonItem();
             this.btnPhucHoiBD = new DevExpress.XtraBars.BarButtonItem();
-            this.btnTaiLaiBD = new DevExpress.XtraBars.BarButtonItem();
             this.btnThoatBD = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -132,7 +132,7 @@
             // mAMHLabel
             // 
             mAMHLabel.AutoSize = true;
-            mAMHLabel.Location = new System.Drawing.Point(670, 68);
+            mAMHLabel.Location = new System.Drawing.Point(667, 68);
             mAMHLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             mAMHLabel.Name = "mAMHLabel";
             mAMHLabel.Size = new System.Drawing.Size(48, 17);
@@ -142,7 +142,7 @@
             // mAGVLabel
             // 
             mAGVLabel.AutoSize = true;
-            mAGVLabel.Location = new System.Drawing.Point(1182, 68);
+            mAGVLabel.Location = new System.Drawing.Point(1187, 68);
             mAGVLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             mAGVLabel.Name = "mAGVLabel";
             mAGVLabel.Size = new System.Drawing.Size(46, 17);
@@ -152,7 +152,7 @@
             // tRINHDOLabel
             // 
             tRINHDOLabel.AutoSize = true;
-            tRINHDOLabel.Location = new System.Drawing.Point(1374, 69);
+            tRINHDOLabel.Location = new System.Drawing.Point(1369, 69);
             tRINHDOLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             tRINHDOLabel.Name = "tRINHDOLabel";
             tRINHDOLabel.Size = new System.Drawing.Size(59, 17);
@@ -232,7 +232,7 @@
             // tENMHLabel
             // 
             tENMHLabel.AutoSize = true;
-            tENMHLabel.Location = new System.Drawing.Point(310, 68);
+            tENMHLabel.Location = new System.Drawing.Point(303, 68);
             tENMHLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             tENMHLabel.Name = "tENMHLabel";
             tENMHLabel.Size = new System.Drawing.Size(54, 17);
@@ -242,7 +242,7 @@
             // tENLabel
             // 
             tENLabel.AutoSize = true;
-            tENLabel.Location = new System.Drawing.Point(862, 68);
+            tENLabel.Location = new System.Drawing.Point(849, 68);
             tENLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             tENLabel.Name = "tENLabel";
             tENLabel.Size = new System.Drawing.Size(52, 17);
@@ -252,12 +252,12 @@
             // tENMHLabel1
             // 
             tENMHLabel1.AutoSize = true;
-            tENMHLabel1.Location = new System.Drawing.Point(130, 44);
+            tENMHLabel1.Location = new System.Drawing.Point(97, 44);
             tENMHLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             tENMHLabel1.Name = "tENMHLabel1";
-            tENMHLabel1.Size = new System.Drawing.Size(54, 17);
+            tENMHLabel1.Size = new System.Drawing.Size(90, 17);
             tENMHLabel1.TabIndex = 3;
-            tENMHLabel1.Text = "Tên MH";
+            tENMHLabel1.Text = "Tên môn học";
             // 
             // barManager1
             // 
@@ -287,16 +287,25 @@
             this.bar2.DockRow = 0;
             this.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnTaiLaiBD, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnThemBD, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnSuaBD, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnXoaBD, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnGhiBD, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnPhucHoiBD, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnTaiLaiBD, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnThoatBD, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar2.OptionsBar.MultiLine = true;
             this.bar2.OptionsBar.UseWholeRow = true;
             this.bar2.Text = "Main menu";
+            // 
+            // btnTaiLaiBD
+            // 
+            this.btnTaiLaiBD.Caption = "Tải lại";
+            this.btnTaiLaiBD.Id = 5;
+            this.btnTaiLaiBD.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiLaiBD.ImageOptions.Image")));
+            this.btnTaiLaiBD.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTaiLaiBD.ImageOptions.LargeImage")));
+            this.btnTaiLaiBD.Name = "btnTaiLaiBD";
+            this.btnTaiLaiBD.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTaiLaiBD_ItemClick);
             // 
             // btnThemBD
             // 
@@ -342,15 +351,6 @@
             this.btnPhucHoiBD.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnPhucHoiBD.ImageOptions.LargeImage")));
             this.btnPhucHoiBD.Name = "btnPhucHoiBD";
             this.btnPhucHoiBD.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhucHoiBD_ItemClick);
-            // 
-            // btnTaiLaiBD
-            // 
-            this.btnTaiLaiBD.Caption = "Tải lại";
-            this.btnTaiLaiBD.Id = 5;
-            this.btnTaiLaiBD.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiLaiBD.ImageOptions.Image")));
-            this.btnTaiLaiBD.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTaiLaiBD.ImageOptions.LargeImage")));
-            this.btnTaiLaiBD.Name = "btnTaiLaiBD";
-            this.btnTaiLaiBD.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTaiLaiBD_ItemClick);
             // 
             // btnThoatBD
             // 
@@ -517,7 +517,7 @@
             this.cbbTenMh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbTenMh.Enabled = false;
             this.cbbTenMh.FormattingEnabled = true;
-            this.cbbTenMh.Location = new System.Drawing.Point(382, 68);
+            this.cbbTenMh.Location = new System.Drawing.Point(386, 61);
             this.cbbTenMh.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cbbTenMh.Name = "cbbTenMh";
             this.cbbTenMh.Size = new System.Drawing.Size(252, 24);
@@ -538,7 +538,7 @@
             this.cbbTenGV.DisplayMember = "TEN";
             this.cbbTenGV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbTenGV.FormattingEnabled = true;
-            this.cbbTenGV.Location = new System.Drawing.Point(926, 67);
+            this.cbbTenGV.Location = new System.Drawing.Point(930, 61);
             this.cbbTenGV.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cbbTenGV.Name = "cbbTenGV";
             this.cbbTenGV.Size = new System.Drawing.Size(228, 24);
@@ -606,7 +606,7 @@
             this.cbbTrinhDo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsBoDe, "TRINHDO", true));
             this.cbbTrinhDo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbTrinhDo.FormattingEnabled = true;
-            this.cbbTrinhDo.Location = new System.Drawing.Point(1460, 68);
+            this.cbbTrinhDo.Location = new System.Drawing.Point(1457, 61);
             this.cbbTrinhDo.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cbbTrinhDo.Name = "cbbTrinhDo";
             this.cbbTrinhDo.Size = new System.Drawing.Size(184, 24);
@@ -620,7 +620,7 @@
             0,
             0,
             0});
-            this.edtMaCauHoi.Location = new System.Drawing.Point(140, 64);
+            this.edtMaCauHoi.Location = new System.Drawing.Point(148, 60);
             this.edtMaCauHoi.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.edtMaCauHoi.MenuManager = this.barManager1;
             this.edtMaCauHoi.Name = "edtMaCauHoi";
@@ -633,7 +633,7 @@
             // 
             this.edtMaGV.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsBoDe, "MAGV", true));
             this.edtMaGV.Enabled = false;
-            this.edtMaGV.Location = new System.Drawing.Point(1242, 64);
+            this.edtMaGV.Location = new System.Drawing.Point(1262, 65);
             this.edtMaGV.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.edtMaGV.MenuManager = this.barManager1;
             this.edtMaGV.Name = "edtMaGV";
@@ -644,7 +644,7 @@
             // 
             this.edtMaMon.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsBoDe, "MAMH", true));
             this.edtMaMon.Enabled = false;
-            this.edtMaMon.Location = new System.Drawing.Point(738, 64);
+            this.edtMaMon.Location = new System.Drawing.Point(744, 61);
             this.edtMaMon.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.edtMaMon.MenuManager = this.barManager1;
             this.edtMaMon.Name = "edtMaMon";

@@ -122,7 +122,7 @@ namespace TRACNGHIEM
             if (Program.mGroup == "Coso")
             {
                 cbbCoSo.Enabled = false;
-                btnThemSV.Visible = btnSuaSV.Visible = btnChuyenLop.Visible = btnGhiSV.Visible = btnXoaSV.Visible = btnPhucHoiSV.Visible = true;
+                btnThemSV.Visible = btnSuaSV.Visible = btnGhiSV.Visible = btnXoaSV.Visible = btnPhucHoiSV.Visible = true;
                 btnThem.Visibility = btnGhi.Visibility = btnXoa.Visibility = btnPhucHoi.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
             }
             //Truong thì login đó có thể đăng nhập vào bất kỳ phân mảnh  nào để xem dữ liệu 
@@ -130,7 +130,7 @@ namespace TRACNGHIEM
             {
                 cbbCoSo.Enabled = true;
                 btnThem.Visibility = btnSuaL.Visibility= btnGhi.Visibility = btnXoa.Visibility = btnPhucHoi.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-                btnThemSV.Visible = btnSuaSV.Visible = btnChuyenLop.Visible = btnGhiSV.Visible = btnXoaSV.Visible = btnPhucHoiSV.Visible = false;
+                btnThemSV.Visible = btnSuaSV.Visible = btnGhiSV.Visible = btnXoaSV.Visible = btnPhucHoiSV.Visible = false;
             }
             dem++;
             pcSV.Enabled = pcLop.Enabled = false;
@@ -138,6 +138,7 @@ namespace TRACNGHIEM
             {
                 cbbTenLop.SelectedItem = ((DataRowView)this.bdsLop.Current);
             }
+            btnTaiLaiSV.PerformClick();
 
         }
 
@@ -156,7 +157,7 @@ namespace TRACNGHIEM
 
                 gcSinhVien.Enabled = gcLop.Enabled = false;
 
-                btnThemSV.Enabled = btnSuaSV.Enabled = btnChuyenLop.Enabled = btnXoaSV.Enabled = false;
+                btnThemSV.Enabled = btnSuaSV.Enabled = btnXoaSV.Enabled = false;
                 btnGhiSV.Enabled = btnPhucHoiSV.Enabled = btnTaiLaiSV.Enabled = true;
                 edtMaSV.Enabled = edtHo.Enabled = edtTen.Enabled = edtNgaySInh.Enabled = edtDiaChi.Enabled = true;
                 cbbTenLop.Enabled = false;
@@ -205,7 +206,7 @@ namespace TRACNGHIEM
                 gcLop.Enabled = gcSinhVien.Enabled = true;
                 checkThemSV = checkSuaSV = checkXoaSV = false;
 
-                btnThemSV.Enabled = btnSuaSV.Enabled = btnChuyenLop.Enabled = btnXoaSV.Enabled = true;
+                btnThemSV.Enabled = btnSuaSV.Enabled = btnXoaSV.Enabled = true;
                 btnGhiSV.Enabled = btnPhucHoiSV.Enabled = btnTaiLaiSV.Enabled = true;
                 checkSave = true;
                 panelTimGV.Enabled = true;
@@ -308,7 +309,7 @@ namespace TRACNGHIEM
                 gcLop.Enabled = gcSinhVien.Enabled = true;
                 checkThemSV = checkSuaSV = checkXoaSV = false;
 
-                btnThemSV.Enabled = btnSuaSV.Enabled = btnChuyenLop.Enabled = btnXoaSV.Enabled = true;
+                btnThemSV.Enabled = btnSuaSV.Enabled = btnXoaSV.Enabled = true;
                 btnGhiSV.Enabled = btnPhucHoiSV.Enabled = btnTaiLaiSV.Enabled = true;
                 checkChuyenLop = false;
                 this.tbDSLopADT.Connection.ConnectionString = Program.connstr;
@@ -414,7 +415,7 @@ namespace TRACNGHIEM
 
                 ctxMenuSV.Enabled = true;
 
-                btnThemSV.Enabled = btnSuaSV.Enabled = btnChuyenLop.Enabled = btnXoaSV.Enabled = true;
+                btnThemSV.Enabled = btnSuaSV.Enabled = btnXoaSV.Enabled = true;
                 btnGhiSV.Enabled = btnPhucHoiSV.Enabled = btnTaiLaiSV.Enabled = true;
                 checkSave = true;
                 panelTimGV.Enabled = true;
@@ -552,7 +553,7 @@ namespace TRACNGHIEM
             ctxMenuSV.Enabled = true;
             panelTimGV.Enabled = true;
 
-            btnThemSV.Enabled = btnSuaSV.Enabled = btnChuyenLop.Enabled = btnXoaSV.Enabled = true;
+            btnThemSV.Enabled = btnSuaSV.Enabled = btnXoaSV.Enabled = true;
             btnGhiSV.Enabled = btnPhucHoiSV.Enabled = btnTaiLaiSV.Enabled = true;
         }
 
@@ -701,7 +702,7 @@ namespace TRACNGHIEM
             checkThemSV = checkSuaSV = checkXoaSV = false;
             panelTimGV.Enabled = true;
 
-            btnThemSV.Enabled = btnSuaSV.Enabled = btnChuyenLop.Enabled = btnXoaSV.Enabled = true;
+            btnThemSV.Enabled = btnSuaSV.Enabled = btnXoaSV.Enabled = true;
             btnGhiSV.Enabled = btnPhucHoiSV.Enabled = btnTaiLaiSV.Enabled = true;
         }
 
@@ -755,7 +756,7 @@ namespace TRACNGHIEM
                 pcLop.Enabled = false;
                 gcLop.Enabled = gcSinhVien.Enabled = false;
                 pcSV.Enabled = true;
-                btnThemSV.Enabled = btnSuaSV.Enabled = btnChuyenLop.Enabled = btnXoaSV.Enabled = false;
+                btnThemSV.Enabled = btnSuaSV.Enabled = btnXoaSV.Enabled = false;
                 edtMaSV.Enabled = false;
                 edtHo.Enabled = edtTen.Enabled = edtNgaySInh.Enabled = edtDiaChi.Enabled = true;
                 cbbTenLop.Enabled = false;
@@ -785,7 +786,7 @@ namespace TRACNGHIEM
                     pcLop.Enabled = false;
                     pcSV.Enabled = true;
                     gcLop.Enabled = gcSinhVien.Enabled = false;
-                    btnThemSV.Enabled = btnSuaSV.Enabled = btnChuyenLop.Enabled = btnXoaSV.Enabled = false;
+                    btnThemSV.Enabled = btnSuaSV.Enabled = btnXoaSV.Enabled = false;
                     edtMaSV.Enabled = false;
                     edtHo.Enabled = edtTen.Enabled = edtNgaySInh.Enabled = edtDiaChi.Enabled = false;
                     cbbTenLop.Enabled = true;

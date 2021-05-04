@@ -462,6 +462,7 @@ namespace TRACNGHIEM
             }
 
             dem++;
+            btnTaiLaiGVDK.PerformClick();
         }
 
 

@@ -176,7 +176,7 @@
             // 
             // pageInfo2
             // 
-            this.pageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(327F, 2F);
+            this.pageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(436F, 2.00002F);
             this.pageInfo2.Name = "pageInfo2";
             this.pageInfo2.SizeF = new System.Drawing.SizeF(321F, 23F);
             this.pageInfo2.StyleName = "PageInfo";
@@ -443,7 +443,7 @@
             this.xrTableCell2.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumRecordNumber() + 1")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumRecordNumber()")});
             this.xrTableCell2.Multiline = true;
             this.xrTableCell2.Name = "xrTableCell2";
             this.xrTableCell2.StyleName = "DetailData1";
@@ -564,7 +564,7 @@
             this.DetailData1,
             this.DetailData3_Odd,
             this.PageInfo});
-            this.Version = "19.1";
+            this.Version = "20.2";
             ((System.ComponentModel.ISupportInitialize)(this.table1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tnDataSet1)).EndInit();

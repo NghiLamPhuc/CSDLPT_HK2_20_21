@@ -82,6 +82,7 @@ namespace TRACNGHIEM
             {
                 btnPhucHoiMH.Enabled = true;
             }
+            btnTaiLaiMH.PerformClick();
         }
 
         private void btnThemMH_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

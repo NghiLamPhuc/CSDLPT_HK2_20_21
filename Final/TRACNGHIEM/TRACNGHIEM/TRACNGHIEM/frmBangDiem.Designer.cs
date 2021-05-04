@@ -176,47 +176,47 @@
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(3844, 96);
+            this.barDockControlTop.Size = new System.Drawing.Size(1924, 50);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 2108);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 1055);
             this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(3844, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1924, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 96);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 50);
             this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 2012);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 1005);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(3844, 96);
+            this.barDockControlRight.Location = new System.Drawing.Point(1924, 50);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 2012);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 1005);
             // 
             // bANGDIEMGridControl
             // 
             this.bANGDIEMGridControl.DataSource = this.sP_XemKetQuaSV;
             this.bANGDIEMGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bANGDIEMGridControl.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            this.bANGDIEMGridControl.Location = new System.Drawing.Point(0, 309);
+            this.bANGDIEMGridControl.Location = new System.Drawing.Point(0, 263);
             this.bANGDIEMGridControl.MainView = this.gridView1;
             this.bANGDIEMGridControl.Margin = new System.Windows.Forms.Padding(275, 0, 275, 271);
             this.bANGDIEMGridControl.MenuManager = this.barManager1;
             this.bANGDIEMGridControl.Name = "bANGDIEMGridControl";
             this.bANGDIEMGridControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bANGDIEMGridControl.Size = new System.Drawing.Size(3844, 1799);
+            this.bANGDIEMGridControl.Size = new System.Drawing.Size(1924, 792);
             this.bANGDIEMGridControl.TabIndex = 13;
             this.bANGDIEMGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -302,10 +302,10 @@
             this.cbbLop.DisplayMember = "TENLOP";
             this.cbbLop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbLop.FormattingEnabled = true;
-            this.cbbLop.Location = new System.Drawing.Point(472, 78);
+            this.cbbLop.Location = new System.Drawing.Point(500, 78);
             this.cbbLop.Margin = new System.Windows.Forms.Padding(4);
             this.cbbLop.Name = "cbbLop";
-            this.cbbLop.Size = new System.Drawing.Size(240, 41);
+            this.cbbLop.Size = new System.Drawing.Size(240, 24);
             this.cbbLop.TabIndex = 1;
             this.cbbLop.ValueMember = "MALOP";
             this.cbbLop.SelectedIndexChanged += new System.EventHandler(this.cbbCoSo_SelectedIndexChanged);
@@ -314,10 +314,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(401, 78);
+            this.label1.Location = new System.Drawing.Point(393, 78);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 41);
+            this.label1.Size = new System.Drawing.Size(42, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lớp";
             // 
@@ -327,17 +327,17 @@
             this.cbbLanThi.Location = new System.Drawing.Point(3906, 169);
             this.cbbLanThi.Margin = new System.Windows.Forms.Padding(4);
             this.cbbLanThi.Name = "cbbLanThi";
-            this.cbbLanThi.Size = new System.Drawing.Size(238, 41);
+            this.cbbLanThi.Size = new System.Drawing.Size(238, 24);
             this.cbbLanThi.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(793, 77);
+            this.label5.Location = new System.Drawing.Point(765, 77);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(162, 41);
+            this.label5.Size = new System.Drawing.Size(83, 21);
             this.label5.TabIndex = 8;
             this.label5.Text = "Môn học";
             // 
@@ -345,10 +345,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1221, 81);
+            this.label6.Location = new System.Drawing.Point(1178, 81);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 41);
+            this.label6.Size = new System.Drawing.Size(69, 21);
             this.label6.TabIndex = 9;
             this.label6.Text = "Lần thi";
             // 
@@ -358,10 +358,10 @@
             this.cbbMH.DisplayMember = "TENMH";
             this.cbbMH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbMH.FormattingEnabled = true;
-            this.cbbMH.Location = new System.Drawing.Point(884, 75);
+            this.cbbMH.Location = new System.Drawing.Point(898, 79);
             this.cbbMH.Margin = new System.Windows.Forms.Padding(4);
             this.cbbMH.Name = "cbbMH";
-            this.cbbMH.Size = new System.Drawing.Size(240, 41);
+            this.cbbMH.Size = new System.Drawing.Size(240, 24);
             this.cbbMH.TabIndex = 10;
             this.cbbMH.ValueMember = "MAMH";
             this.cbbMH.SelectedIndexChanged += new System.EventHandler(this.cbbMH_SelectedIndexChanged);
@@ -372,10 +372,10 @@
             this.cbbLThi.DisplayMember = "LAN";
             this.cbbLThi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbLThi.FormattingEnabled = true;
-            this.cbbLThi.Location = new System.Drawing.Point(1298, 77);
+            this.cbbLThi.Location = new System.Drawing.Point(1292, 77);
             this.cbbLThi.Margin = new System.Windows.Forms.Padding(4);
             this.cbbLThi.Name = "cbbLThi";
-            this.cbbLThi.Size = new System.Drawing.Size(133, 41);
+            this.cbbLThi.Size = new System.Drawing.Size(133, 24);
             this.cbbLThi.TabIndex = 11;
             this.cbbLThi.ValueMember = "LAN";
             this.cbbLThi.SelectedIndexChanged += new System.EventHandler(this.cbbLThi_SelectedIndexChanged);
@@ -387,7 +387,7 @@
             this.label2.Location = new System.Drawing.Point(25, 78);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 41);
+            this.label2.Size = new System.Drawing.Size(57, 21);
             this.label2.TabIndex = 12;
             this.label2.Text = "Cơ sở";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -396,9 +396,9 @@
             // 
             this.cbbCoSo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbCoSo.FormattingEnabled = true;
-            this.cbbCoSo.Location = new System.Drawing.Point(95, 75);
+            this.cbbCoSo.Location = new System.Drawing.Point(127, 75);
             this.cbbCoSo.Name = "cbbCoSo";
-            this.cbbCoSo.Size = new System.Drawing.Size(221, 41);
+            this.cbbCoSo.Size = new System.Drawing.Size(221, 24);
             this.cbbCoSo.TabIndex = 14;
             this.cbbCoSo.SelectedIndexChanged += new System.EventHandler(this.cbbCoSo_SelectedIndexChanged_1);
             // 
@@ -414,10 +414,10 @@
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Controls.Add(this.cbbLop);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupControl1.Location = new System.Drawing.Point(0, 96);
+            this.groupControl1.Location = new System.Drawing.Point(0, 50);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(3844, 213);
+            this.groupControl1.Size = new System.Drawing.Size(1924, 213);
             this.groupControl1.TabIndex = 8;
             // 
             // sP_XemKetQuaSVTableAdapter
@@ -426,10 +426,10 @@
             // 
             // frmBangDiem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(22F, 42F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(3844, 2108);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.bANGDIEMGridControl);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.barDockControlLeft);

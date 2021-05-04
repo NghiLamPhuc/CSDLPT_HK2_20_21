@@ -118,7 +118,8 @@ namespace TRACNGHIEM
                 btnThemBD.Visibility = btnSuaBD.Visibility = btnGhiBD.Visibility = btnXoaBD.Visibility = btnPhucHoiBD.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             }
             dem++;
-
+            btnTaiLaiBD.PerformClick();
+            
         }
 
         public void btnThoatBD_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -329,6 +330,7 @@ namespace TRACNGHIEM
 
                 // TODO: This line of code loads data into the 'tNDataSet.BAITHI' table. You can move, or remove it, as needed.
                 this.tbBaiThiADT.Fill(this.TNDataSet.BAITHI);
+                //this.tbBaiThiADT.Fill(this.TNDataSet.BODE);
                 // TODO: This line of code loads data into the 'tNDataSet.DSGIAOVIEN' table. You can move, or remove it, as needed.
                 this.tbGiaoVienADT.Fill(this.TNDataSet.DSGIAOVIEN);
 
@@ -460,7 +462,7 @@ namespace TRACNGHIEM
             {
                 try
                 {
-                    this.tbBoDe.FillByGV_MH(this.TNDataSet.BODE, Program.username,cbbTenMonHocC.SelectedValue.ToString().Trim());
+                    this.tbBoDe.FillByGV_MH(this.TNDataSet.BODE, Program.username, cbbTenMonHocC.SelectedValue.ToString().Trim());
                     lbTenMH.Text = cbbTenMonHocC.SelectedValue.ToString().Trim();
                 }
                 catch (Exception ex)

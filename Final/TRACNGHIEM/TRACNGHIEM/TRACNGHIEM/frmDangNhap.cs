@@ -31,7 +31,7 @@ namespace TRACNGHIEM
             //}
             Program.mlogin = txUsername.Text;
             Program.password = txPassword.Text;
-            Program.mSV = txtMSV.Text;
+            //Program.mSV = txtMSV.Text;
 
 
             // Đăng nhập thất bại
@@ -148,9 +148,9 @@ namespace TRACNGHIEM
             //txtMSV.Visible = true;
             //pictureBoxMSV.Visible = true;
 
-            lbMSV.Visible = false;
-            txtMSV.Visible = false;
-            pictureBoxMSV.Visible = false;
+            //lbMSV.Visible = false;
+            //txtMSV.Visible = false;
+            //pictureBoxMSV.Visible = false;
             try
             {
                 //Integrated Security=True--> Kết nối về site chủ không cần password và tài khoản
@@ -211,9 +211,9 @@ namespace TRACNGHIEM
 
         private void radGiaoVien_CheckedChanged(object sender, EventArgs e)
         {
-            lbMSV.Visible = false;
-            txtMSV.Enabled = false;
-            pictureBoxMSV.Visible = false;
+            //lbMSV.Visible = false;
+            //txtMSV.Enabled = false;
+            //pictureBoxMSV.Visible = false;
             label2.Text = "Tên ĐN";
         }
 

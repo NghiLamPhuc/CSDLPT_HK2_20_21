@@ -193,8 +193,8 @@ namespace TRACNGHIEM
             // 
             this.btnBangDiemBaoCao.Caption = "Bảng điểm";
             this.btnBangDiemBaoCao.Id = 6;
-            this.btnBangDiemBaoCao.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBangDiemBaoCao.ImageOptions.Image")));
-            this.btnBangDiemBaoCao.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBangDiemBaoCao.ImageOptions.LargeImage")));
+            this.btnBangDiemBaoCao.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.Bangdiem;
+            this.btnBangDiemBaoCao.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.Bangdiem;
             this.btnBangDiemBaoCao.Name = "btnBangDiemBaoCao";
             this.btnBangDiemBaoCao.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBangDiemBaoCao_ItemClick);
             // 
@@ -202,8 +202,8 @@ namespace TRACNGHIEM
             // 
             this.btnTaoTK.Caption = "Tạo tài khoản";
             this.btnTaoTK.Id = 7;
-            this.btnTaoTK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTaoTK.ImageOptions.Image")));
-            this.btnTaoTK.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTaoTK.ImageOptions.LargeImage")));
+            this.btnTaoTK.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.taotaikhoan;
+            this.btnTaoTK.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.taotaikhoan;
             this.btnTaoTK.Name = "btnTaoTK";
             this.btnTaoTK.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTaoTK_ItemClick);
             // 
@@ -211,8 +211,8 @@ namespace TRACNGHIEM
             // 
             this.btnThoatMain.Caption = "Thoát";
             this.btnThoatMain.Id = 8;
-            this.btnThoatMain.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThoatMain.ImageOptions.Image")));
-            this.btnThoatMain.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnThoatMain.ImageOptions.LargeImage")));
+            this.btnThoatMain.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.Thoat;
+            this.btnThoatMain.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.Thoat;
             this.btnThoatMain.Name = "btnThoatMain";
             this.btnThoatMain.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThoatMain_ItemClick);
             // 
@@ -220,8 +220,8 @@ namespace TRACNGHIEM
             // 
             this.btnDangXuat.Caption = "Đăng xuất";
             this.btnDangXuat.Id = 9;
-            this.btnDangXuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.ImageOptions.Image")));
-            this.btnDangXuat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.ImageOptions.LargeImage")));
+            this.btnDangXuat.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.Dangxuat;
+            this.btnDangXuat.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.Dangxuat;
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat_ItemClick);
             // 
@@ -229,7 +229,8 @@ namespace TRACNGHIEM
             // 
             this.btnMonHoc.Caption = "Môn học";
             this.btnMonHoc.Id = 10;
-            this.btnMonHoc.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnMonHoc.ImageOptions.LargeImage")));
+            this.btnMonHoc.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.Monhoc;
+            this.btnMonHoc.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.Monhoc;
             this.btnMonHoc.Name = "btnMonHoc";
             this.btnMonHoc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMonHoc_ItemClick);
             // 
@@ -237,7 +238,8 @@ namespace TRACNGHIEM
             // 
             this.btnKhoa.Caption = "Khoa";
             this.btnKhoa.Id = 11;
-            this.btnKhoa.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnKhoa.ImageOptions.LargeImage")));
+            this.btnKhoa.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.Khoa;
+            this.btnKhoa.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.Khoa;
             this.btnKhoa.Name = "btnKhoa";
             this.btnKhoa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKhoa_ItemClick);
             // 
@@ -245,7 +247,8 @@ namespace TRACNGHIEM
             // 
             this.btnLop.Caption = "Lớp";
             this.btnLop.Id = 12;
-            this.btnLop.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnLop.ImageOptions.LargeImage")));
+            this.btnLop.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.Lop;
+            this.btnLop.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.Lop;
             this.btnLop.Name = "btnLop";
             this.btnLop.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLop_ItemClick);
             // 
@@ -259,7 +262,8 @@ namespace TRACNGHIEM
             // 
             this.btnDe.Caption = "Đề thi";
             this.btnDe.Id = 14;
-            this.btnDe.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDe.ImageOptions.LargeImage")));
+            this.btnDe.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.Dethi;
+            this.btnDe.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.Dethi;
             this.btnDe.Name = "btnDe";
             this.btnDe.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDe_ItemClick);
             // 
@@ -267,7 +271,8 @@ namespace TRACNGHIEM
             // 
             this.btnThiThu.Caption = "Thi thử";
             this.btnThiThu.Id = 15;
-            this.btnThiThu.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnThiThu.ImageOptions.LargeImage")));
+            this.btnThiThu.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.Thithu;
+            this.btnThiThu.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.Thithu;
             this.btnThiThu.Name = "btnThiThu";
             this.btnThiThu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThiThu_ItemClick);
             // 
@@ -279,10 +284,11 @@ namespace TRACNGHIEM
             // 
             // btnDSDK
             // 
-            this.btnDSDK.Caption = "Danh sách đăng kí thi ";
+            this.btnDSDK.Caption = "D";
+            this.btnDSDK.Enabled = false;
             this.btnDSDK.Id = 17;
-            this.btnDSDK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDSDK.ImageOptions.Image")));
-            this.btnDSDK.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDSDK.ImageOptions.LargeImage")));
+            this.btnDSDK.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.Danhsachdangkithi;
+            this.btnDSDK.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.Danhsachdangkithi;
             this.btnDSDK.Name = "btnDSDK";
             this.btnDSDK.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDSDK_ItemClick);
             // 
@@ -306,7 +312,8 @@ namespace TRACNGHIEM
             // 
             this.btnGiangVienDK.Caption = "Giảng viên đăng ký";
             this.btnGiangVienDK.Id = 20;
-            this.btnGiangVienDK.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnGiangVienDK.ImageOptions.LargeImage")));
+            this.btnGiangVienDK.ImageOptions.Image = global::TRACNGHIEM.Properties.Resources.Giangviendangky;
+            this.btnGiangVienDK.ImageOptions.LargeImage = global::TRACNGHIEM.Properties.Resources.Giangviendangky;
             this.btnGiangVienDK.Name = "btnGiangVienDK";
             this.btnGiangVienDK.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnGiangVienDK_ItemClick);
             // 

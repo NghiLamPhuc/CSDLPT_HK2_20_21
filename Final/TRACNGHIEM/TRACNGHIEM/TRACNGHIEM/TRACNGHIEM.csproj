@@ -94,6 +94,11 @@
     <Compile Include="frmDSDK.Designer.cs">
       <DependentUpon>frmDSDK.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDSDK1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmDSDK.resx</DependentUpon>
+    </Compile>
     <Compile Include="frmKhoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +110,11 @@
     </Compile>
     <Compile Include="frmKQThi.Designer.cs">
       <DependentUpon>frmKQThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKQThi1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmKQThi.resx</DependentUpon>
     </Compile>
     <Compile Include="frmLop.cs">
       <SubType>Form</SubType>
@@ -186,6 +196,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TNDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CauHoiItem.resx">
       <DependentUpon>CauHoiItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,11 +211,17 @@
     <EmbeddedResource Include="frmBoDe.resx">
       <DependentUpon>frmBoDe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDSDK.resx" />
+    <EmbeddedResource Include="frmDSDK.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmDSDK1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmKhoa.resx">
       <DependentUpon>frmKhoa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmKQThi.resx" />
+    <EmbeddedResource Include="frmKQThi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmKQThi1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLop.resx">
       <DependentUpon>frmLop.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,6 +255,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="rpBangDiem.resx">
       <DependentUpon>rpBangDiem.cs</DependentUpon>
@@ -242,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rpKQTHI.resx">
       <DependentUpon>rpKQTHI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
@@ -275,6 +301,54 @@
     <None Include="TNDataSet1.xss">
       <DependentUpon>TNDataSet1.xsd</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bangdiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dangxuat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Danhsachdangkithi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dethi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Giangviendangky.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Khoa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loaitaikhoan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matkhau.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monhoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taotaikhoan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tendangnhap %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tendangnhap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thithu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thoat.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
